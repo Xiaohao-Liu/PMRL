@@ -1,0 +1,100 @@
+{
+    "run_cfg": {
+        "default": "./config/vast/default_run_cfg.json",
+        "learning_rate": 2e-05
+    },
+    "model_cfg": {
+        "default": "./config/vast/default_model_cfg.json",
+        "vision_encoder_type": "evaclip01_giant"
+    },
+    "data_cfg": {
+        "train": [
+            {
+                "type": "annoindexed",
+                "training": true,
+                "name": "finetune_area",
+                "txt": "/home/storage/PMRL/datasets/annotations/vast150k/VASTannotations150k.json",
+                "vision": "/home/storage/PMRL/datasets/vast/videos",
+                "audio": "/home/storage/PMRL/datasets/vast/audios",
+                "vision_transforms": "crop_flip",
+                "vision_format": "video_rawvideo",
+                "vision_sample_num": 2,
+                "audio_sample_num": 1,
+                "task": "ret%tv",
+                "epoch": 5,
+                "n_workers": 8,
+                "batch_size": 64
+            }
+        ],
+        "val": [
+            {
+                "type": "annoindexed",
+                "training": false,
+                "name": "msrvtt_ret",
+                "txt": "datasets/annotations/msrvtt/descs_ret_test.json",
+                "vision": "/home/storage/PMRL/datasets/msrvtt/data/TestVideo",
+                "vision_transforms": "crop_flip",
+                "vision_format": "video_rawvideo",
+                "audio": "/home/storage/PMRL/datasets/msrvtt/data/TestAudio",
+                "vision_sample_num": 8,
+                "audio_sample_num": 1,
+                "task": "ret%tvas",
+                "n_workers": 8,
+                "batch_size": 64
+            },
+            {
+                "type": "annoindexed",
+                "training": false,
+                "name": "didemo_ret",
+                "txt": "datasets/annotations/didemo/descs_ret_test.json",
+                "vision": "/home/storage/PMRL/datasets/didemo/videos",
+                "audio": "/home/storage/PMRL/datasets/didemo/audios",
+                "vision_format": "video_rawvideo",
+                "vision_sample_num": 8,
+                "audio_sample_num": 2,
+                "task": "ret%tva",
+                "n_workers": 8,
+                "batch_size": 64
+            },
+            {
+                "type": "annoindexed",
+                "training": false,
+                "name": "vatex_ret",
+                "txt": "datasets/annotations/vatex/descs_ret_test.json",
+                "vision": "/home/storage/PMRL/datasets/vatex/videos",
+                "audio": "/home/storage/PMRL/datasets/vatex/audios",
+                "vision_format": "video_rawvideo",
+                "vision_sample_num": 16,
+                "audio_sample_num": 1,
+                "task": "ret%tvas",
+                "n_workers": 8,
+                "batch_size": 64
+            },
+            {
+                "type": "annoindexed",
+                "training": false,
+                "name": "audiocaps_ret",
+                "txt": "datasets/annotations/audiocaps/descs_ret_test.json",
+                "audio": "/home/storage/PMRL/datasets/audiocaps/audios",
+                "vision": "/home/storage/PMRL/datasets/audiocaps/videos",
+                "audio_sample_num": 1,
+                "vision_format": "video_rawvideo",
+                "vision_sample_num": 8,
+                "task": "ret%tva",
+                "n_workers": 8,
+                "batch_size": 64
+            },
+            {
+                "type": "annoindexed",
+                "training": false,
+                "name": "clothov2_ret",
+                "txt": "datasets/annotations/clothov2/descs_cap_test.json",
+                "audio": "/home/storage/PMRL/datasets/clotho/audios",
+                "audio_sample_num": 3,
+                "task": "ret%ta",
+                "n_workers": 8,
+                "batch_size": 64
+            }
+        ]
+    }
+}
