@@ -278,6 +278,20 @@ vim config/pmrl/my_experiment.json
 
 ---
 
+## Citation
+
+If you find this work useful, please consider citing:
+
+```bibtex
+@article{liu2025principled,
+  title={Principled multimodal representation learning},
+  author={Liu, Xiaohao and Xia, Xiaobo and Ng, See-Kiong and Chua, Tat-Seng},
+  journal={arXiv preprint arXiv:2507.17343},
+  year={2025}
+}
+```
+
+
 
 <div align="center">
 
@@ -285,3 +299,4 @@ vim config/pmrl/my_experiment.json
 **[🔝 Back to Top](#-principled-multimodal-representation-learning-pmrl)**
 
 </div>
+
