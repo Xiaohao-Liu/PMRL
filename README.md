@@ -283,11 +283,12 @@ vim config/pmrl/my_experiment.json
 If you find this work useful, please consider citing:
 
 ```bibtex
-@article{liu2025principled,
+@article{liu2026principled,
   title={Principled multimodal representation learning},
   author={Liu, Xiaohao and Xia, Xiaobo and Ng, See-Kiong and Chua, Tat-Seng},
-  journal={arXiv preprint arXiv:2507.17343},
-  year={2025}
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2026},
+  publisher={IEEE}
 }
 ```
 
