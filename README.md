@@ -183,27 +183,6 @@ torchrun --nproc_per_node=4 run.py \
 
 ---
 
-## 📊 Experiments
-
-Our comprehensive evaluation includes:
-
-### Datasets
-- **Vision-Language**: COCO, Flickr30K, Conceptual Captions
-- **Audio-Visual**: AudioSet, VGGSound, MUSIC
-- **Video-Text**: MSR-VTT, VATEX, ActivityNet
-
-### Benchmarks
-- **Cross-modal Retrieval**: Image-Text, Audio-Visual, Video-Text
-- **Multimodal Classification**: Fine-grained recognition tasks
-- **Zero-shot Transfer**: Cross-domain generalization
-
-### Metrics
-- **Retrieval**: Recall@K, Mean Rank, Mean Reciprocal Rank
-- **Classification**: Accuracy, F1-Score, mAP
-- **Alignment**: Singular Value Analysis, Representation Quality
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -213,7 +192,7 @@ PMRL/
 ├── 🔧 preinstall.sh            # Installation script
 ├── 📋 LICENSE                   # MIT License
 ├── 📁 config/                   # Configuration files
-│   └── 📁 vast/
+│   └── 📁 pmrl/
 │       ├── default_run_cfg.json
 │       ├── default_model_cfg.json
 │       ├── 📁 pretrain_cfg/
@@ -238,6 +217,8 @@ PMRL/
     ├── top.png
     └── framework.png
 ```
+
+Datasets can be found in [https://huggingface.co/datasets/xhLiu/PMRL_data](https://huggingface.co/datasets/xhLiu/PMRL_data), including activitinet, audiocaps, clothov2, didemo, msrvtt, vatex, and vast-150k. You can download the raw data by video IDs. 
 
 ---
 
