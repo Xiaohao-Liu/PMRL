@@ -138,8 +138,8 @@ Also, download the vast weights as a start checkpoint in [VAST](https://github.c
 ```bash
 # Basic training
 python run.py \
-    --config config/vast/default_run_cfg.json \
-    --model_config config/vast/default_model_cfg.json
+    --config config/pmrl/default_run_cfg.json \
+    --model_config config/pmrl/default_model_cfg.json
 
 # Training with custom parameters
 python run.py \
@@ -155,8 +155,8 @@ python run.py \
 ```bash
 # Evaluation mode
 python run.py \
-    --config config/vast/default_run_cfg.json \
-    --model_config config/vast/default_model_cfg.json \
+    --config config/pmrl/default_run_cfg.json \
+    --model_config config/pmrl/default_model_cfg.json \
     --mode testing \
     --checkpoint path/to/your/model.pt
 ```
@@ -166,8 +166,8 @@ python run.py \
 ```bash
 # Zero-shot testing
 python run.py \
-    --config config/vast/default_run_cfg.json \
-    --model_config config/vast/default_model_cfg.json \
+    --config config/pmrl/default_run_cfg.json \
+    --model_config config/pmrl/default_model_cfg.json \
     --zero_shot true
 ```
 
@@ -176,8 +176,8 @@ python run.py \
 ```bash
 # Multi-GPU training
 torchrun --nproc_per_node=4 run.py \
-    --config config/vast/default_run_cfg.json \
-    --model_config config/vast/default_model_cfg.json \
+    --config config/pmrl/default_run_cfg.json \
+    --model_config config/pmrl/default_model_cfg.json \
     --use_ddp true
 ```
 
