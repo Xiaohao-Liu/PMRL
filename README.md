@@ -92,7 +92,7 @@ bash preinstall.sh
 
 ```bash
 # Clone repository
-git clone https://github.com/your-username/PMRL.git
+git clone https://github.com/Xiaohao-Liu/PMRL.git
 cd PMRL
 
 # Run installation script (includes all dependencies)
