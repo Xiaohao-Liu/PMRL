@@ -218,7 +218,7 @@ PMRL/
     └── framework.png
 ```
 
-Datasets can be found in [https://huggingface.co/datasets/xhLiu/PMRL_data](https://huggingface.co/datasets/xhLiu/PMRL_data), including activitinet, audiocaps, clothov2, didemo, msrvtt, vatex, and vast-150k. You can download the raw data by video IDs. 
+Datasets can be found in [https://huggingface.co/datasets/xhLiu/PMRL_data](https://huggingface.co/datasets/xhLiu/PMRL_data), including activitinet, audiocaps, clothov2, didemo, msrvtt, vatex, and vast-150k. You can download the raw data by video IDs. The raw datasets for evaluation can be found in [xhLiu/MM_eval](https://huggingface.co/datasets/xhLiu/MM_eval).
 
 ---
 
