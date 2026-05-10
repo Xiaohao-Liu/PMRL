@@ -68,7 +68,7 @@ The PMRL framework consists of three main components:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/PMRL.git
+git clone https://github.com/Xiaohao-Liu/PMRL.git
 cd PMRL
 
 # Install dependencies
